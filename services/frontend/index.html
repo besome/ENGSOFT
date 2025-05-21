@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="hero is-info is-small">
@@ -20,6 +21,17 @@
         </section>
         <div class="box cta">
             <p class="has-text-centered">Uma simples livraria utilizando microservices</p>
+            <div class="search-container">
+                <label for="search-input" class="sr-only">Buscar livro por ID</label>
+                <input 
+                    id="search-input"
+                    class="search" 
+                    type="text" 
+                    placeholder="Busque um ID"
+                    aria-label="Campo de busca por ID do livro"
+                > 
+                <button id = "search-button" type="button"><i class="fa fa-search"></i></button>
+            </div>
         </div>
         <section class="container">
             <div class="columns books"></div>
